@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Galactic Grill</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background-color: #0b0d17;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(to right, #1a1a2e, #16213e);
+            border-radius: 15px;
+        }
+
+        #header-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #4ecca3;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+        nav a {
+            color: #4ecca3;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        section {
+            background: #1a1a2e;
+            padding: 30px;
+            margin-top: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #4ecca3;
+        }
+
+        article {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 15px;
+        }
+
+        article img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 20px;
+            border: 2px solid #fff;
+        }
+
+        form {
+            display: grid;
+            gap: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #4ecca3;
+            color: #1a1a2e;
+            padding: 10px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=800" id="header-img" alt="A glowing cosmic nebula in deep space">
+        <h1>The Galactic Grill</h1>
+
+        <nav>
+            <a href="#menu"><h2>#menu</h2></a>
+            <a href="#order-form"><h2>#order-form</h2></a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+
+            <article>
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=200" alt="Gourmet burger with glowing toppings">
+                <div>
+                    <h3>Supernova Sliders</h3>
+                    <p>Three mini beef patties with spicy solar sauce and meteorite mushrooms. <em>Price: $12.99</em></p>
+                </div>
+            </article>
+
+            <article>
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=200" alt="Large pizza that looks like a planet">
+                <h3>Moon-Cheese Pizza</h3>
+                <p>A craters-deep dish topped with five types of extraterrestrial cheeses. <em>Price: $18.50</em></p>
+            </article>
+
+            <article>
+                <img src="https://images.unsplash.com/photo-1550507992-eb63ffee0847?w=200" alt="Vibrant green salad">
+                <h3>Nebula Greens</h3>
+                <p>Bioluminescent kale and stellar sprouts tossed in a milky-way vinaigrette. <em>Price: $9.00</em></p>
+            </article>
+        </section>
+
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+
+            <form>
+                <label for="sliders-qty">Supernova Sliders Quantity:</label>
+                <input type="number" id="sliders-qty" name="sliders-qty" min="0" value="0">
+
+                <label for="pizza-qty">Moon-Cheese Pizza Quantity:</label>
+                <input type="number" id="pizza-qty" name="pizza-qty" min="0" value="0">
+
+                <label for="greens-qty">Nebula Greens Quantity:</label>
+                <input type="number" id="greens-qty" name="greens-qty" min="0" value="0">
+
+                <p><strong>Select your side:</strong></p>
+                <input type="radio" id="fries" name="side" value="fries">
+                <label for="fries" style="display:inline;">Cosmic Fries</label><br>
+                <input type="radio" id="rings" name="side" value="rings">
+                <label for="rings" style="display:inline;">Saturn Rings (Onions)</label>
+
+                <p><strong>Add-ons:</strong></p>
+                <input type="checkbox" id="sauce" name="add-on" value="sauce">
+                <label for="sauce" style="display:inline;">Extra Solar Sauce</label><br>
+                <input type="checkbox" id="cheese" name="add-on" value="cheese">
+                <label for="cheese" style="display:inline;">Moon Dust (Extra Cheese)</label>
+
+                <label for="special-requests">Special Requests for the Sliders:</label>
+                <textarea id="special-requests" name="special-requests" rows="4" placeholder="e.g. No Meteorite Mushrooms..."></textarea>
+
+                <input type="submit" value="Go To Checkout">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made by <strong>jordanahasgul</strong></p>
+    </footer>
+</body>
+</html>
